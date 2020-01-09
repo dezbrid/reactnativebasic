@@ -22,8 +22,8 @@ export default () => {
         setType(typeP)
     };
     const handlePicture = async () => {
-        let photo = await camera.takePictureAsync({base64:true});
-console.log('foto base 64 ',photo);
+        let photo = await camera.takePictureAsync({ base64: true });
+        console.log('foto base 64 ', photo);
     }
 
     if (hasPermission === null) {
@@ -36,7 +36,7 @@ console.log('foto base 64 ',photo);
     return (
 
         <View style={{ flex: 1 }}>
-            <Camera style={{ flex: 1 }} type={type} ref={ref => {camera = ref}} >
+            <Camera style={{ flex: 1 }} type={type} ref={ref => { camera = ref }} >
                 <View style={styles.viewCamera}>
                     <Button title='flip' onPress={handleFlip} />
                     <Button title='tomar foto' onPress={handlePicture} />
