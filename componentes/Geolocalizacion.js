@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Text, Button } from 'react-native';
+import { StyleSheet, View, Text,  } from 'react-native';
+import { Button } from 'react-native-elements';
 import * as Location from 'expo-location';
 import * as Permissions from 'expo-permissions';
 
@@ -22,7 +23,10 @@ export default () => {
         <View style={styles.container}>
             <Text>{location.coords.latitude}{' '}
             {location.coords.longitude}</Text>
-            <Button title='Solicitar posicion' onPress={getLocation} />
+            <Button 
+            title='Solicitar posicion' 
+            onPress={getLocation} 
+            type = 'outline'/>
         </View>
     );
 }
