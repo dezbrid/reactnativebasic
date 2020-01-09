@@ -30,7 +30,7 @@ export default () => {
         return <View />;
     };
     if (hasPermission === false) {
-        return <Text>Dame permisos!!! </Text>;
+        return  <View><Text>Dame permisos!!! </Text> </View >;
     };
 
     return (
