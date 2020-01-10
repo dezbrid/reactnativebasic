@@ -6,12 +6,14 @@ import AsycStorage from './componentes/AsycnStorage';
 import Geolocalizacion from './componentes/Geolocalizacion';
 import Camara from './componentes/Camara';
 import Mapas from './componentes/Mapas';
+import Recordatorios from './Recordatorios';
+
 
 export default function App() {
   
 
   return (
-    <Mapas/>
+    <Recordatorios/>
   );
 }
 
