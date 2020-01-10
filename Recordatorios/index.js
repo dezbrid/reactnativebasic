@@ -1,20 +1,18 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
+
 import ComponetView from './view';
+import datos from './datos';
 
 
-const datos =[
-    {key:'1',title:'Recordatorio 1'},
-    {key:'2',title:'Recordatorio 2'},
-    {key:'3',title:'Recordatorio 3'},
-    {key:'4',title:'Recordatorio 4'},
-    {key:'5',title:'Recordatorio 5'},
-    {key:'6',title:'Recordatorio 6'},
-]
 export default () => {
-
-
+    const [data, setData] = useState(datos);
+    const [isVisible,setIsVisible]=useState(false)
+    const handlePress = () => setIsVisible(!isVisible)
     return (
-        <ComponetView/>
+        <ComponetView 
+        handlePress={handlePress} 
+        data={data} 
+        isVisible={isVisible}/>
     );
 }
