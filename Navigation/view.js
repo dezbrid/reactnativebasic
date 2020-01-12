@@ -8,6 +8,9 @@ export default () => {
     return (
         <View style={styles.container} >
             <Text>Navigation</Text>
+            <Text>Navigation</Text>
+            <Text>Navigation</Text>
+            <Text>Navigation</Text>
         </View>
     );
 }
