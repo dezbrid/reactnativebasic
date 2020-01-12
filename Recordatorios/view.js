@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, FlatList } from 'react-native';
+import { View, FlatList } from 'react-native';
 import { Button, Header, Overlay, Text, Input } from 'react-native-elements'
 import { styles } from './styles';
 import Item from './components/item';

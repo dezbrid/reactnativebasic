@@ -7,13 +7,14 @@ import Geolocalizacion from './componentes/Geolocalizacion';
 import Camara from './componentes/Camara';
 import Mapas from './componentes/Mapas';
 import Recordatorios from './Recordatorios';
+import Navigation from './Navigation';
 
 
 export default function App() {
   
 
   return (
-    <Recordatorios/>
+    <Navigation/>
   );
 }
 
